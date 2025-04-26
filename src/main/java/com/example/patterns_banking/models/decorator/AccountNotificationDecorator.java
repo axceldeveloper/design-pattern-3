@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 public class AccountNotificationDecorator extends AccountDecorator {
+
   public AccountNotificationDecorator(Account account) {
     super(account);
   }

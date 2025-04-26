@@ -1,0 +1,20 @@
+withdraw amount from a bank account
+curl --location --request POST 'http://localhost:8080/accounts/1/withdraw?amount=80'
+
+Deposit an amount to a bank account
+curl --location --request POST 'http://localhost:8080/accounts/1/deposit?amount=80'
+
+Create new customer with proxy.
+curl --location 'http://localhost:8080/customers' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "name": "John Doe",
+  "email": "johndoe@bancolombia.com"
+}'
+
+curl --location 'http://localhost:8080/customers' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "name": "John Doe",
+  "email": "johndoe@yahoo.com"
+}'
